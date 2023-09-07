@@ -16,6 +16,7 @@ int main(void)
 		putchar(quote[i]);
 		i++;
 	}
+	putchar('\n');
 
 	return (0);
 }
