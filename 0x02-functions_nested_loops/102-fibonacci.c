@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	int i, fib;
+	int i, fib = 1;
 
 	for (i = 1; i <= 50; i++)
 	{
-		fib += i;
 		printf("%d, ", fib);
+		fib += i;
 	}
 
 	return (0);
