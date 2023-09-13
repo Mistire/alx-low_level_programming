@@ -11,10 +11,10 @@ int main(void)
 	{
 		if (i != 50)
 		{
-			printf("%d, ", a);
+			printf("%lu, ", a);
 		} else
 		{
-			printf("%d\n", a);
+			printf("%lu\n", a);
 		}
 			c = a + b;
 			a = b;
