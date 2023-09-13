@@ -7,12 +7,18 @@ int main(void)
 {
 	int a = 1, b = 2, c,  i;
 
-	for (i = 0; i < 50; i++)
+	for (i = 1; i <= 50; i++)
 	{
-		printf("%d, ", a);
-		c = a + b;
-		a = b;
-		b = c;
+		if (i != 50)
+		{
+			printf("%d, ", a);
+		} else
+		{
+			printf("%d\n", a);
+		}
+			c = a + b;
+			a = b;
+			b = c;
 	}
 
 	return (0);
