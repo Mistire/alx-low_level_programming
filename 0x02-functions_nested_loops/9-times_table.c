@@ -25,7 +25,7 @@ void times_table(void)
 				}
 			}
 
-			else if (k > 9)
+			else if (k != 9)
 			{
 
 				if (j != 9)
