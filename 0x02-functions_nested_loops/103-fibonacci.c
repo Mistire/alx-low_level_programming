@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Even Liber Abbaci
- * Returb: 0
+ * Return: 0
  */
 int main(void)
 {
