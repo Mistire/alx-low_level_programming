@@ -11,15 +11,5 @@ int add(int n, int m)
 
 	s = n + m;
 
-	if (s > 9)
-	{
-		_putchar(s / 10 + '0');
-		_putchar(s % 10 + '0');
-	}
-	else
-	{
-		_putchar(s);
-	}
-
 	return (s);
 }
