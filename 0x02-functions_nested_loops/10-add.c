@@ -20,4 +20,6 @@ int add(int n, int m)
 	{
 		_putchar(s);
 	}
+
+	return (s);
 }
