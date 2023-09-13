@@ -6,7 +6,7 @@
  */
 int _islower(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 97 && c <= 112)
 	{
 		return (1);
 	}
