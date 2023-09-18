@@ -17,7 +17,7 @@ int _atoi(char *s)
 
 	if (*s == '-' || *s == '+')
 	{
-		if (s[i] == '-')
+		if (*s == '-')
 		{
 			sign = -1;
 		}
@@ -26,7 +26,7 @@ int _atoi(char *s)
 
 	while (*s >= '0' && *s <= '9')
 	{
-		int digit = s[i] - '0';
+		int digit = *s - '0';
 
 		if (result > (2147483647 - digit) / 10)
 		{
