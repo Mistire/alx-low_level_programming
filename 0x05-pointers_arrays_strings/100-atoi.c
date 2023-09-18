@@ -35,7 +35,7 @@ int _atoi(char *s)
 			}
 			else
 			{
-				return (-2147483647);
+				return (-2147483648);
 			}
 		}
 		result = result * 10 + digit;
