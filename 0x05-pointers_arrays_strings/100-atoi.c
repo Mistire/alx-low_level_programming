@@ -10,21 +10,21 @@ int _atoi(char *s)
 	int sign = 1;
 	int i = 0;
 
-	while (s[i] == ' ')
+	while (*s == ' ')
 	{
-		i++;
+		s++;
 	}
 
-	if (s[i] == '-' || s[i] == '+')
+	if (*s == '-' || *s == '+')
 	{
 		if (s[i] == '-')
 		{
 			sign = -1;
 		}
-		i++;
+		s++;
 	}
 
-	while (s[i] >= '0' && s[i] <= '9')
+	while (*s >= '0' && *s <= '9')
 	{
 		int digit = s[i] - '0';
 
@@ -40,7 +40,7 @@ int _atoi(char *s)
 			}
 		}
 		result = result * 10 + digit;
-		i++;
+		s++;
 	}
 	return (result * sign);
 }
