@@ -39,8 +39,8 @@ int _atoi(char *s)
 				return (-2147483647);
 			}
 		}
-	result = result * 10 + digit;
-	i++
+		result = result * 10 + digit;
+		i++;
 	}
 	return (result * sign);
 }
