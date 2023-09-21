@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * leet -  encodes a string
  * @str: character
@@ -31,7 +31,7 @@ char *leet(char *str)
 		{
 			str[i] = '7';
 		}
-	i++;
+		i++;
 	}
 
 	return (str);
