@@ -3,9 +3,22 @@
  * _strcat - concatenates two strings
  * @dest: string1
  * @src: string2
- * Return: dest
+ * Return: ptr
  */
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
+	char *ptr = dest;
+
+	while(dest != '\0')
+		dest++;
+	while(src != '\0')
+	{
+		*dest = *dest;
+
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+
+	return (ptr);
 }
