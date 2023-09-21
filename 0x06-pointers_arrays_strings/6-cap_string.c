@@ -4,13 +4,13 @@
  * @c: array of characters
  * Return: c
  */
-char *cap_string(char c[])
+char *cap_string(char *c)
 {
 	int i = 0;
 
 	while (c[i] != '\0')
 	{
-		if (c[i] == ' ' || c[i] == '.' || c[i] == '\t' || c[i] == '\n')
+		if (c[i] == ' ' || c[i] == '.' || c[i] == '\t')
 		{
 			if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
 			{
@@ -19,6 +19,5 @@ char *cap_string(char c[])
 		}
 		i++;
 	}
-
 	return (c);
 }
