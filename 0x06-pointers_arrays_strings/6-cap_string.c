@@ -6,18 +6,18 @@
  */
 char *cap_string(char *c)
 {
-	char *ptr = c;
+	int i = 0;
 
-	while (*c != '\0')
+	while (c[i] != '\0')
 	{
-		if (*c == ' ' || *c == '.' || *c == '\t')
+		if (c[i] == ' ' || c[i] == '.' || c[i] == '\t' || c[i] == '\n')
 		{
-			if (*c >= 'a' && *c <= 'z')
+			if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
 			{
-				*c -= ('a' - 'A');
+				c[i + 1] -= ('a' - 'A');
 			}
 		}
-		c++;
+		i++;
 	}
-	return (ptr);
+	return (c);
 }
