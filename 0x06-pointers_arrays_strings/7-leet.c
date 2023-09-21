@@ -6,30 +6,29 @@
  */
 char *leet(char *str)
 {
-	char *ptr = str;
+	int i = 0;
 
-	while (*str != '\0')
+	while (str[i] != '\0')
 	{
-		char c = *str;
 
-		if (c == 'A' || c == 'a')
+		if (str[i] == 'A' || str[i] == 'a')
 		{
-			*str = '4';
+			str[i] = '4';
 		}
-		else if (c == 'e' || c == 'E')
+		else if (str[i] == 'e' || str[i] == 'E')
 		{
-			*str = '3';
+			str[i] = '3';
 		}
-		else if (c == 'o' || c == 'O')
+		else if (str[i] == 'o' || str[i] == 'O')
 		{
-			*str = '0';
+			str[i] = '0';
 		}
-		else if (c == 'l' || c == 'L')
+		else if (str[i] == 'l' || str[i] == 'L')
 		{
-			*str = '1';
+			str[i] = '1';
 		}
 	str++;
 	}
 
-	return (ptr);
+	return (str);
 }
