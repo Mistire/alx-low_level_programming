@@ -10,7 +10,7 @@ char *cap_string(char *c)
 
 	while (c[i] != '\0')
 	{
-		if (c[i] == ' ' || c[i] == '.' || c[i] == '\t')
+		if (c[i] == ' ' || c[i] == '.' || c[i] == '\t' || c[i] == '\n')
 		{
 			if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
 			{
