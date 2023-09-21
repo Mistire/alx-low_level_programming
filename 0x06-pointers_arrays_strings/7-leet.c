@@ -1,38 +1,43 @@
 #include <stdio.h>
 /**
- * leet -  encodes a string
- * @str: character
- * Return: str
+ * leet - encode string
+ * @str: string
+ * Return: ptr
  */
 char *leet(char *str)
 {
-	int i = 0;
+	char *ptr = str;
 
-	while (str[i] != '\0')
+	while (*str != '\0')
 	{
+		char c = *str;
 
-		if (str[i] == 'A' || str[i] == 'a')
+		if ((c == 'a' || c == 'A') || (c == 'e' || c == 'E') || (c == 'o' || c == 'O') || (c == 't' || c == 'T') || (c == 'l' || c == 'L'))
 		{
-			str[i] = '4';
+			if (c == 'a' || c == 'A')
+			{
+				*str = '4';
+			}
+			else if (c == 'e' || c == 'E')
+			{
+				*str = '3';
+			}
+			else if (c == 'o' || c == 'O')
+			{
+				*str = '0';
+			}
+			else if (c == 't' || c == 'T')
+			{
+				*str = '7';
+			}
+			else if (c == 'l' || c == 'L')
+			{
+				*str = '1';
+			}
 		}
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (str[i] == 'o' || str[i] == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
-		}
-		else if (str[i] == 't' || str[i] == 'T')
-		{
-			str[i] = '7';
-		}
-		i++;
+
+		str++;
 	}
 
-	return (str);
+	return (ptr);
 }
