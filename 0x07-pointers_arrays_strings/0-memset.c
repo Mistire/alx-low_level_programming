@@ -3,7 +3,7 @@
  * @s: string
  * @b: constant byte
  * @n: integer
- * Return: s
+ * Return:s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
